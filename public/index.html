@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transfer Regional - Demo</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header><h1>Transfer Regional — Protótipo</h1></header>
+
+  <main>
+    <section id="quote-section" class="card">
+      <h2>Obter Cotação Rápida</h2>
+      <form id="quoteForm">
+        <label>Distância (km): <input type="number" name="distance_km" value="20" required /></label>
+        <label>Passageiros: <input type="number" name="passengers" value="1" min="1" required /></label>
+        <button id="quoteBtn" type="submit">Obter Cotação</button>
+      </form>
+      <div id="quoteResult" class="result"></div>
+    </section>
+
+    <section id="reservations-section" class="card">
+      <h2>Reservas</h2>
+      <form id="reservationForm">
+        <label>Nome: <input name="nome" required /></label>
+        <label>Destino: <input name="destino" required /></label>
+        <label>Data: <input name="data" type="date" required /></label>
+        <button type="submit">Criar Reserva</button>
+      </form>
+      <h3>Lista de Reservas</h3>
+      <ul id="reservationsList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Protótipo — não para produção</p>
+  </footer>
+
+  <script src="/js/reservation-ui.js"></script>
+</body>
+</html>
